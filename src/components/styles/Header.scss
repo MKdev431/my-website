@@ -1,0 +1,39 @@
+.header {
+  background-color: rgb(246, 246, 246);
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  justify-content: center;
+  &__img {
+    display: block;
+  }
+  &__name {
+    font-size: 40px;
+  }
+  &__profession {
+    font-size: 22px;
+  }
+
+  &__text {
+    margin-block: 2%;
+    max-width: 70%;
+    text-align: center;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/laptop2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
