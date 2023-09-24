@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-import MyImage from "../components/images/michal_kurek-small.png";
+import MyImage from "../components/images/michal_kurek-fullsize-rbg.png";
 import Button from "../components/Button";
 
 import "../components/styles/Header.scss";

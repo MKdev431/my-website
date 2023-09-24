@@ -1,0 +1,83 @@
+@import "breakpoints";
+
+.skills {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  background-color: rgb(246, 246, 246);
+  // height: 50vh;
+  padding-block: 2%;
+
+  height: 100%;
+  width: 100%;
+  margin-inline: auto;
+  &__title {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+}
+
+.skill-wrapper {
+  display: grid;
+  // gap: 10%;
+  grid-template-columns: 25% 25% 25% 25%;
+  max-width: 1280px;
+  justify-content: center;
+  align-content: center;
+  margin-inline: auto;
+
+  // display: grid;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 5%;
+  // width: 10%;
+
+  // height: 60vh;
+  // padding: 50px;
+  // background-color: green;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+  // padding: 10px;
+  width: 80px;
+  height: 80px;
+  margin-block: 30px;
+  margin-inline: auto;
+  &__icon {
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 30%;
+    padding: 8px;
+    // margin: 10px;
+  }
+  span {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+}
+
+@include xs {
+  .skill-wrapper {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@include md {
+  .skill-wrapper {
+    grid-template-columns: 25% 25% 25%;
+  }
+}
+
+@include lg {
+  .skill-wrapper {
+    grid-template-columns: 20% 20% 20% 20%;
+  }
+}

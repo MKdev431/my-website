@@ -1,0 +1,20 @@
+.portfolio {
+  margin-block: 5%;
+  max-width: 1280px;
+  margin-inline: auto;
+  &__title {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+}
+
+.project-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project {
+  flex-basis: 25%;
+  height: 500px;
+  background-color: royalblue;
+}
